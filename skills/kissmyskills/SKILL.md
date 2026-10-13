@@ -42,6 +42,16 @@ The user's board lives at https://crm.kissmyskills.com and is reachable through 
 - Before destructive changes (`crm_remove_stage`, `crm_remove_field`, `crm_rollback`, deleting records) describe what will change and get explicit confirmation.
 - After every change, give the user the `ui_url` from the result.
 
+## E-mail with the CRM (the user's own Gmail connector)
+
+KissMySkills does not read or send e-mail. When the user also has a Gmail (or other mail) connector:
+
+- Replies: search their mail only for the addresses / domains of CRM cards (`crm_search_deals`, `crm_today`); log each reply on its card with `crm_add_note` (kind `note`: date + one-line summary; full body only if the user asks).
+- Stage: propose moving a card that got a reply to Replied (or equivalent); call `crm_move_stage` only after the user says yes.
+- Outreach: turn a `crm_draft_outreach` draft into a mail DRAFT in their mailbox. Never send without the user's explicit yes for that message; after sending, mark it with `crm_draft_outreach` (`draft_id` + status `sent`).
+- Privacy: touch only threads that match CRM contacts; never bulk-import or scan the whole mailbox.
+- No mail connector: say once that they can add Gmail in Claude Settings -> Connectors. The connector prompt "Sync replies from my email to the CRM" runs this flow.
+
 ## Plan, add-ons, feedback
 
 - `my_plan` shows the user's plan, trial status and what is unlocked. If a tool returns an `upgrade_hint`, pass it on plainly; do not push upgrades otherwise.
