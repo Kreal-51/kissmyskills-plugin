@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "kissmyskills",
+  "description": "Official KissMySkills plugins for Claude Code",
+  "owner": {
+    "name": "KissMySkills",
+    "email": "hello@kissmyskills.com",
+    "url": "https://kissmyskills.com"
+  },
+  "plugins": [
+    {
+      "name": "kissmyskills",
+      "source": "./",
+      "description": "2,500+ AI skills, agents and prompt packs plus an AI CRM, through the KissMySkills MCP connector",
+      "category": "productivity",
+      "homepage": "https://kissmyskills.com/pages/connector"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "kissmyskills",
+  "version": "1.0.0",
+  "description": "2,500+ ready-made AI skills, agents and prompt packs plus an AI CRM, loaded into Cursor on demand through the KissMySkills remote MCP connector. Sign in by email or Google; 7-day free trial, no card.",
+  "author": {
+    "name": "KissMySkills",
+    "email": "hello@kissmyskills.com"
+  },
+  "homepage": "https://kissmyskills.com/pages/connector",
+  "repository": "https://github.com/Kreal-51/kissmyskills-plugin",
+  "license": "MIT",
+  "keywords": ["skills", "prompts", "agents", "mcp", "crm", "seo", "marketing", "sales", "productivity"],
+  "logo": "assets/icon.png"
+}
