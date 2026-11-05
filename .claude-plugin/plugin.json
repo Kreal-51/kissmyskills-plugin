@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "kissmyskills",
   "displayName": "KissMySkills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "2,500+ ready-made AI skills, agents and prompt packs plus an AI CRM, loaded into Claude Code on demand through the KissMySkills remote MCP connector. Sign in by email or Google; 7-day free trial, no card.",
   "author": {
     "name": "KissMySkills",

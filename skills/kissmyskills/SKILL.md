@@ -47,3 +47,7 @@ The user's board lives at https://crm.kissmyskills.com and is reachable through 
 - `my_plan` shows the user's plan, trial status and what is unlocked. If a tool returns an `upgrade_hint`, pass it on plainly; do not push upgrades otherwise.
 - Product tools with prefixes `rx_` (Receptionist), `contract_` (Contracts), `seo_` and `dash_` appear only when the plan includes them.
 - Problems with the connector: `report_issue`; ideas: `submit_feedback`. Human support: hello@kissmyskills.com.
+
+## Own and team skills in Claude Code
+
+Handles starting with `my-` are the user's own or team skills. When the user asks to install, sync or update "my skills" in Claude Code, follow the plugin command `/kms-sync-skills`: call `my_skills_sync`, then run `scripts/sync-skills.mjs` from this plugin with the returned link. Never fetch the link yourself and never run scripts inside a synced skill unless that skill's work needs it and the user asked for it.
